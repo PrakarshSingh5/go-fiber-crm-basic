@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github/PrakarshSingh5/go-fiber-crm-basic/lead"
-	"github/PrakarshSingh5/go-fiber-crm-basic/database"
+	"github.com/PrakarshSingh5/go-fiber-crm-basic/lead"
+	"github.com/PrakarshSingh5/go-fiber-crm-basic/database"
 	"github.com/gofiber/fiber"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 func setupRoutes(app *fiber.App) {
